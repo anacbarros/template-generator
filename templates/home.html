@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Template</title>
+</head>
+<body>
+    <h1>Gerador de Template de Recrutamento</h1>
+    <form action="/generate" method="post">
+        <label for="nome">Nome do Candidato:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required><br><br>
+        
+        <label for="etapa">Etapa do Processo:</label>
+        <input type="text" id="etapa" name="etapa" required><br><br>
+        
+        <button type="submit">Gerar PDF</button>
+    </form>
+</body>
+</html>
