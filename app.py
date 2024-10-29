@@ -27,5 +27,9 @@ def generate():
     pdf = pdfkit.from_string(template_content, False)
     return send_file(BytesIO(pdf), download_name="template.pdf", as_attachment=True)
 
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
+
